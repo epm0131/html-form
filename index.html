@@ -6,42 +6,100 @@
 
     <meta charset='utf-8'>
     <title>Force User Sign Up Form</title>
-
+    <header>Force User Sign Up Form</header>
+    <link href='style.css' type='text/css' rel='stylesheet'>
   </head>
   <body>
 
     <h1>Basic Info</h1>
 
     <form method='POST' action='http://requestb.in/oiacxsoi' enctype='multipart/form-data'>
-
-      <aside>
-        <label for='Full Name'>Full Name:</label>
-        <input type='text' id='Full Name' name='Ettore Merendino' placeholder='Ettore Merendino' required>
-      </aside>
-      <aside>
-        <label for='avatar'>Profile Picture</label>
-        <input type='file' id='avatar'>
-      </aside>
-      <aside>
-        <label for='Email Address'>Email:</label>
-        <input type='text' id='Email Address' name='merendino.ettore@gmail.com'>
-      </aside>
-      <aside>
-        <input type='radio' name='Light' id='favorite-color-light' value='Light'>
-        <label for =''>Light</label>
-        <input type='radio' name='Dark' id='favorite-color-dark' value='Dark'>
-        <label for=''>Dark</label>
-      </aside>  
-
-
-
-      <aside>
-        <label for='Origin Story'>Origin Story</label>
-        <textarea id='Origin Story' name='Origin Story'>This is my story</textarea>
-
+      <section>
+        <aside>
+          <label for='Full Name'>Full Name:</label>
+          <input type='text' id='Full Name' name='Ettore Merendino' placeholder='Ettore Merendino' required>
+        </aside>
+        <aside>
+          <label for='avatar'>Profile Picture</label>
+          <input type='file' id='avatar'>
+        </aside>
+        <aside>
+          <label for='Email Address'>Email:</label>
+          <input type='text' id='Email Address' name='email' placeholder='merendino.ettore@gmail.com' required>
+        </aside>
+        <aside>
+      <p>Side:</p>
+          <input type='radio' name='side' id='light' value='Light'>
+          <label for ='light'>Light</label>
+          <input type='radio' name='side' id='dark' value='Dark'>
+          <label for='dark'>Dark</label>
+        </aside>
+        <aside>
+          <label for='Origin Story'>Origin Story</label>
+          <textarea id='Origin Story' name='Origin Story' required>This is my story</textarea>
+        </aside>
+      </section>
+    <h2>Abilities</h2>
+      <section>
+        <aside>
+          <label for='Lightsaber Color'>Lightsaber Color</label>
+          <select name='Lightsaber Color' id='Lightsaber Color'>
+          <option value=''>Select Color</option>
+          <option value='red'>Red</option>
+          <option value='blue'>Blue</option>
+          <option value='green'>Green</option>
+        </select>
+        </aside>
+        <aside>
+          <label for='levitate'>How many objects can you levitate at once</label>
+          <input type='number' id='levitate' name'How many objects can you levitate at once?' min='0' max='100' value='1'>
+        </aside>
+        <aside>
+          <label for='ability'>Favorite Ability</label>
+          <input type='text' id='ability' name='Favorite Ability' placeholder='precognition'>
+        </aside>
+        <aside>
+          <p>Pilot Experience</p>
+          <input type='checkbox' id='Speeder' name='Speeder' value='Speeder'>
+          <label for='Speeder'>Speeder</label>
+          <input type='checkbox' id='Transport' name='Transport' value='Transport'>
+          <label for='Transport'>Transport</label>
+          <input type='checkbox' id='X-wing' name='X-wing' value='X-wing'>
+          <label for='X-wing'>X-wing</label>
+          <input type='checkbox' id='TIE Fighter' name='TIE Fighter' value='TIE Fighter'>
+          <label for='TIE Fighter'>TIE Fighter</label>
+          <input type='checkbox' id="Starship" name='Starship' value='Starship'>
+          <label for='Starship'>Starship</label>
+          <input type='checkbox' id='Bantha' name='Bantha' value='Bantha'>
+          <label for='Bantha'>Bantha</label>
+        </aside>
+      </section>
+    <h3>Applicant Info</h3>
+      <section>
+        <aside>
+          <label for='mentor'>Desired Mentor</label>
+          <input type='text' id='mentor' name='Desired Mentor' placeholder='Yoda'>
+        </aside>
+        <aside>
+          <label for='date'>Application Date</label>
+          <input type='date' required>
+        </aside>
+        <aside>
+          <label for='password'>Application Password</label>
+          <input typer='password' id='password' name='password' required>
+        </aside>
+        <aside>
+          <label for='dark side'>How do you get to the dark side?</label>
+          <textarea id="dark side" name='dark side'></textarea>
+        </aside>
+        <aside>
+          <input type='reset' value='Start Over'>
+          <input type='submit' value='Apply'>
+        </aside>  
+      </section>
   </body>
 
-
+  <footer>&#0169; 2016 The Republic</footer>
 
 
 
