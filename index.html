@@ -11,10 +11,9 @@
   </head>
   <body>
 
-    <h1>Basic Info</h1>
-
     <form method='POST' action='http://requestb.in/oiacxsoi' enctype='multipart/form-data'>
-      <section>
+      <fieldset>
+          <legend>Basic Info</legend>
         <aside>
           <label for='Full Name'>Full Name:</label>
           <input type='text' id='Full Name' name='Ettore Merendino' placeholder='Ettore Merendino' required>
@@ -28,7 +27,7 @@
           <input type='text' id='Email Address' name='email' placeholder='merendino.ettore@gmail.com' required>
         </aside>
         <aside>
-      <p>Side:</p>
+          <label for='Side'>Side</label>
           <input type='radio' name='side' id='light' value='Light'>
           <label for ='light'>Light</label>
           <input type='radio' name='side' id='dark' value='Dark'>
@@ -38,9 +37,10 @@
           <label for='Origin Story'>Origin Story</label>
           <textarea id='Origin Story' name='Origin Story' required>This is my story</textarea>
         </aside>
-      </section>
-    <h2>Abilities</h2>
-      <section>
+
+      </fieldset>
+      <fieldset>
+          <legend>Abilities</legend>
         <aside>
           <label for='Lightsaber Color'>Lightsaber Color</label>
           <select name='Lightsaber Color' id='Lightsaber Color'>
@@ -48,18 +48,18 @@
           <option value='red'>Red</option>
           <option value='blue'>Blue</option>
           <option value='green'>Green</option>
-        </select>
+          </select>
         </aside>
         <aside>
           <label for='levitate'>How many objects can you levitate at once</label>
-          <input type='number' id='levitate' name'How many objects can you levitate at once?' min='0' max='100' value='1'>
+          <input type='number' id='levitate' name'levitate' min='0' max='100' value='1'>
         </aside>
         <aside>
           <label for='ability'>Favorite Ability</label>
           <input type='text' id='ability' name='Favorite Ability' placeholder='precognition'>
         </aside>
         <aside>
-          <p>Pilot Experience</p>
+          <label for='pilot-experience'>Pilot Experience</label>
           <input type='checkbox' id='Speeder' name='Speeder' value='Speeder'>
           <label for='Speeder'>Speeder</label>
           <input type='checkbox' id='Transport' name='Transport' value='Transport'>
@@ -73,9 +73,9 @@
           <input type='checkbox' id='Bantha' name='Bantha' value='Bantha'>
           <label for='Bantha'>Bantha</label>
         </aside>
-      </section>
-    <h3>Applicant Info</h3>
-      <section>
+      </fieldset>
+      <fieldset>
+        <legend>Applicant</legend>
         <aside>
           <label for='mentor'>Desired Mentor</label>
           <input type='text' id='mentor' name='Desired Mentor' placeholder='Yoda'>
@@ -86,45 +86,20 @@
         </aside>
         <aside>
           <label for='password'>Application Password</label>
-          <input typer='password' id='password' name='password' required>
+          <input type='password' id='password' name='password' required>
         </aside>
         <aside>
           <label for='dark side'>How do you get to the dark side?</label>
           <textarea id="dark side" name='dark side'></textarea>
         </aside>
+      <section>
         <aside>
           <input type='reset' value='Start Over'>
           <input type='submit' value='Apply'>
-        </aside>  
+        </aside>
       </section>
+      </fieldset>
   </body>
 
   <footer>&#0169; 2016 The Republic</footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>

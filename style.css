@@ -1,3 +1,30 @@
-section {
-  border: 1px solid black;
+
+fieldset {
+display: inline-block;
+vertical-align: top;
+width: 30%;
+
+
+
+
+
 }
+
+label {
+display: block;
+}
+
+input {
+
+display: block;
+
+}
+
+
+
+footer {
+
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
